@@ -17,14 +17,14 @@ export default function Layout({ children }) {
         <main className="flex-grow container mx-auto p-4">
           {children}
         </main>
-        <footer className="bg-gray-200 p-4 mt-auto">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-800">Contributors</h2>
-          <div className="space-y-2">
-            <p className="text-lg text-gray-700">Jacob Hastings</p>
-            <p className="text-lg text-gray-700">Jim Landers</p>
-            <p className="text-lg text-gray-700">Shengsheng Liu</p>
-            <p className="text-lg text-gray-700">Randall Osborn</p>
-            <p className="text-lg text-gray-700">Maxwell Zimmer</p>
+        <footer className="bg-gradient-to-r from-black to-gray-600 shadow">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">Contributors</h2>
+          <div className="space-y-2 text-blue-500">
+            <p className="text-lg ">Jacob Hastings</p>
+            <p className="text-lg ">Jim Landers</p>
+            <p className="text-lg ">Shengsheng Liu</p>
+            <p className="text-lg ">Randall Osborn</p>
+            <p className="text-lg ">Maxwell Zimmer</p>
           </div>
         </footer>
       </body>

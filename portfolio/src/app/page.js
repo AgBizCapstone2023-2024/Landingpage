@@ -20,10 +20,16 @@ export default function Page() {
       </label>
       <ul className="list-disc list-inside mb-4">
         <li className="mb-2">
-          The problem being addressed by your project/product is clearly stated
-          and relevant for your audience. You can frame this as a question to
-          hook your audience, e.g., "Have you ever struggled with X?" or a
-          statement, or even better, a relevant case study to illustrate.
+          AgBizLease aims to facilitate fair agreements between agricultural
+          producers, ensuring equity in both short- and long-term crop leases.
+          It provides calculations for two primary lease types: crop share
+          percentage and annual cash rent payment. These calculations are based
+          on the Net Present Value (NPV) of total costs borne by either the
+          tenant or the landowner. In both lease types, the percentage share of
+          crop return or cash rent payment is determined by the contribution to
+          total costs over the lease period. In the case of a cash rent lease,
+          the annual payment is calculated considering both the landowner's
+          required rent and the tenant's financial capacity.
         </li>
         <li>
           VP 1: Prior to AgBiz Lease, farmers and tenants lacked access to an
@@ -31,11 +37,32 @@ export default function Page() {
           We're grateful to have addressed this gap.
         </li>
         <li>
-          The value proposition (VP) of your project/product is clearly stated
-          and meaningful for your audience. Don't have a "value proposition"
-          section in the page. Instead, have something like "Why X?" or "How is
-          X different?", or simply list key VPs with a description. It should be
-          self-explanatory.
+          AgBizLease utilizes pre-existing enterprise budgets to serve as a
+          foundation for establishing fair lease agreements between tenants and
+          landowners for both annual and perennial crops. These budgets contain
+          various assumptions such as prices received, yields obtained, costs,
+          and inflation rates, all of which are easily customizable. Once the
+          appropriate budgets have been selected and adjusted, users can
+          generate scenario reports using AgBizLease. Each scenario can include
+          one to five individual plans, allowing for easy comparison. Below is a
+          partial list of relevant scenarios:
+        </li>
+
+        <li class="ml-4">Crop-share or annual cash rent payment in crop production </li>
+        <li class="ml-4">
+          Livestock-shares or annual cash rent payment in livestock production
+        </li>
+        <li class="ml-4">
+          Shares of a product or annual cash rent payment in a value added
+          business
+        </li>
+        <li>
+          AgBizLease employs economic principles such as net present value (NPV)
+          to assess fair crop share or cash rent leases for both tenants and
+          landowners. The projected annual net returns are discounted to their
+          present value, allowing for comparison with other lease plans within
+          each scenario. Each lease plan can be discounted using its own
+          discount rate, as well as beginning and ending investment values
         </li>
       </ul>
       <div className="space-x-4">
