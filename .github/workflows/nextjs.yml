@@ -38,9 +38,7 @@ jobs:
         working-directory: portfolio
         run: npm run build
 
-      - name: Export with Next.js
-        working-directory: portfolio
-        run: npm run export
+     
 
       - name: Move output to root
         run: mv portfolio/out out
