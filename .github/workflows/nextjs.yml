@@ -65,8 +65,14 @@ jobs:
       - name: Build with Next.js
         working-directory: portfolio
         run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Create Output Directory
+        run: mkdir ./out
+      - name: Archive artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: nextjs-build
+          path: ./out
+    
 
   # Deployment job
   deploy:
