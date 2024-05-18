@@ -5,7 +5,7 @@ export default function Page() {
     <div>
       <div class="centered-heading">
         <h1 className="text-3xl font-bold mb-4">
-          AgBiz Lease: Establishing fair tenant/farmer agreements one property
+          AgBizLease: Establishing fair tenant/farmer agreements one property
           at a time.
         </h1>
         <h2 className="text-xl mb-4">
@@ -19,7 +19,12 @@ export default function Page() {
         AgBizLease: What and Why
       </label>
       <ul className="list-disc list-inside mb-4">
-        <li className="mb-2">
+      <li className="mb-2">
+          Prior to AgBizLease, farmers and tenants lacked access to an
+          online tool for negotiating lease agreements based on financial data.
+          We're grateful to have addressed this gap.
+        </li>
+        <li>
           AgBizLease aims to facilitate fair agreements between agricultural
           producers, ensuring equity in both short- and long-term crop leases.
           It provides calculations for two primary lease types: crop share
@@ -30,11 +35,6 @@ export default function Page() {
           total costs over the lease period. In the case of a cash rent lease,
           the annual payment is calculated considering both the landowner's
           required rent and the tenant's financial capacity.
-        </li>
-        <li>
-          VP 1: Prior to AgBiz Lease, farmers and tenants lacked access to an
-          online tool for negotiating lease agreements based on financial data.
-          We're grateful to have addressed this gap.
         </li>
         <li>
           AgBizLease utilizes pre-existing enterprise budgets to serve as a
