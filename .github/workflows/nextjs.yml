@@ -65,13 +65,11 @@ jobs:
       - name: Build with Next.js
         working-directory: portfolio
         run: npm run build
-      - name: Create Output Directory
-        run: mkdir ./out
       - name: Archive artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: ./out
+          path: .next
     
 
   # Deployment job
@@ -83,5 +81,4 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
