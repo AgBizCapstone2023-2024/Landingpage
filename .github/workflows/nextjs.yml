@@ -26,17 +26,23 @@ jobs:
         with:
           node-version: "14"
 
+      - name: Change to project directory
+        working-directory: portfolio
+        run: echo "Changed directory to portfolio"
+
       - name: Install dependencies
+        working-directory: portfolio
         run: npm install
 
       - name: Build with Next.js
+        working-directory: portfolio
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: nextjs-build
-          path: .next  # Adjust this path if necessary
+          path: portfolio/.next  # Adjust this path if necessary
 
   deploy:
     environment:
@@ -49,11 +55,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: nextjs-build
-          path: .next  # Adjust this path if necessary
+          path: portfolio/.next  # Adjust this path if necessary
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_dir: .next  # Adjust this path if necessary
+          artifact_dir: portfolio/.next  # Adjust this path if necessary
 
